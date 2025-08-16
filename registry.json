@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "generated": "2025-08-16T11:52:11.386155Z",
+  "sources": [
+    {
+      "id": "bayern-2c-2024",
+      "title": "Bayern – 2c-Delegationsalgorithmen (Stand 01.04.2024)",
+      "type": "2c",
+      "state": "Bayern",
+      "publisher": "ÄLRD Bayern",
+      "url": "https://www.aelrd-bayern.de/images/Delegationsalgorithmen-2c_240401.pdf",
+      "updated": "2024-04-01",
+      "offline": false,
+      "notes": "Offizielles PDF; enthält mehrere Algorithmen u.a. Sepsis, Trauma, etc."
+    },
+    {
+      "id": "sh-he-2023",
+      "title": "Schleswig-Holstein – Handlungsempfehlungen (Version 9.0.1, 14.02.2023)",
+      "type": "Handlungsempfehlung",
+      "state": "Schleswig-Holstein",
+      "publisher": "Träger des Rettungsdienstes SH",
+      "url": "https://www.sh-landkreistag.de/fileadmin/download/Aktuelles/Rettungsdienst/Algorithmen_fuer_den_Rettungsdienst_in_Schleswig-Holstein_2023_v9.0.1.pdf",
+      "updated": "2023-02-14",
+      "offline": false
+    },
+    {
+      "id": "rlp-2c-2023",
+      "title": "Rheinland-Pfalz – Algorithmen für NotSan (2023)",
+      "type": "2c",
+      "state": "Rheinland-Pfalz",
+      "publisher": "MAsTd RLP",
+      "url": "https://mastd.rlp.de/fileadmin/06/02_Arbeit/Arbeit_Dokumente/Anlage_Algorithmen_NotSan_2023.pdf",
+      "updated": "2023-09-30",
+      "offline": false
+    },
+    {
+      "id": "nrw-he-2023",
+      "title": "NRW – Behandlungspfade & Standardarbeitsanweisungen (2023)",
+      "type": "Handlungsempfehlung",
+      "state": "Nordrhein-Westfalen",
+      "publisher": "LV ÄLRD NRW / MAGS NRW",
+      "url": "https://www.mags.nrw/system/files/media/document/file/bpr_saa_hinweise.pdf",
+      "updated": "2023-08-01",
+      "offline": false
+    },
+    {
+      "id": "hessen-2c-2014",
+      "title": "Hessen – Anlage 2c Algorithmen (2014, Rahmenlehrplan)",
+      "type": "2c",
+      "state": "Hessen",
+      "publisher": "UAG ÄLRD Hessen",
+      "url": "https://www.skverlag.de/fileadmin/files_content/Gesetze_und_Verordnungen/Hessen_Rahmenlehrplan_NotSan_Anlage_2c.pdf",
+      "updated": "2014-02-05",
+      "offline": false
+    }
+  ]
+}

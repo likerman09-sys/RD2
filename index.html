@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RD Leitfaden</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0b4f6c">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js').catch(console.error);
+      });
+    }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>RD Leitfaden</h1>
+    <button id="btn-refresh" class="ghost">Aktualisieren</button>
+  </header>
+  <main>
+    <section class="controls">
+      <input id="search" type="search" placeholder="Suchen … (z. B. Sepsis, CPAP)" aria-label="Inhalte durchsuchen">
+      <select id="filter-state" aria-label="Bundesland filtern">
+        <option value="">Alle Bundesländer</option>
+      </select>
+      <select id="filter-type" aria-label="Typ filtern">
+        <option value="">Alle Typen</option>
+        <option value="2c">2c-Algorithmen</option>
+        <option value="Handlungsempfehlung">Handlungsempfehlungen</option>
+      </select>
+      <button id="btn-settings">Einstellungen</button>
+    </section>
+    <ul id="list" aria-live="polite"></ul>
+  </main>
+  <dialog id="settings">
+    <form method="dialog" id="settings-form">
+      <h2>Einstellungen</h2>
+      <label>Registry-URL<br>
+        <input id="registry-url" placeholder="https://…/registry.json">
+      </label>
+      <p class="hint">Falls vorhanden, kannst du hier eine zentrale Registry (GitHub/GitLab/SharePoint) hinterlegen. Beim Start wird dann nach Updates gesucht.</p>
+      <menu>
+        <button value="cancel">Schließen</button>
+        <button id="save-settings" value="default">Speichern</button>
+      </menu>
+    </form>
+  </dialog>
+  <footer>
+    <small>Offlinefähig · Datenhoheit bei euch · Letzte Prüfung: <span id="last-check">–</span></small>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
