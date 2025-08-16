@@ -1,17 +1,697 @@
 {
-  "version": 2,
-  "generated": "2025-08-16T12:00:00Z",
+  "schema_version": 1,
+  "jurisdiction": "Bayern",
+  "generated_at": "2025-08-16T20:04:40Z",
+  "disclaimer": "Nur offizielle Dokumente der ÄLRD Bayern sind verbindlich. Diese JSON ist eine technische Zusammenfassung. Für Einsatzentscheidungen stets die Originaldokumente prüfen.",
   "sources": [
     {
-      "id": "bayern-2c-2024",
-      "title": "Bayern – 2c-Delegationsalgorithmen (Stand 01.04.2024)",
-      "type": "2c",
-      "state": "Bayern",
-      "publisher": "ÄLRD Bayern",
-      "url": "https://www.aelrd-bayern.de/images/Delegationsalgorithmen-2c_240401.pdf",
+      "id": "bayern-2a-20240702",
+      "title": "Medikamente zur Anwendung nach § 2a NotSanG (Version 1.4, Stand 02.07.2024)",
+      "freigegeben_von": "ÄLBRD / StMI",
+      "freigegeben_am": "2024-07-02",
+      "gueltig_bis": "2025-06-30",
+      "url": "https://www.aelrd-bayern.de/images/2024-07-02_Medikamente_nach__2a_NotSanG_1.4_-_FINAL.pdf"
+    },
+    {
+      "id": "bayern-2c-meds-20240401",
+      "title": "Medikamente nach § 4 Abs. 2c NotSanG (Version 1.1, Stand 01.04.2024)",
+      "freigegeben_von": "ÄLBRD / StMI",
+      "freigegeben_am": "2024-03-22",
+      "gueltig_bis": "Änderung auf Algorithmus-Ebene",
+      "url": "https://www.aelrd-bayern.de/images/2024-04-01_Medikamente_nach_4_Abs._2c_NotSanG_1.1.pdf"
+    },
+    {
+      "id": "bayern-2c-algos-20240401",
+      "title": "Delegationsalgorithmen §4 Abs. 2 Nr. 2c NotSanG (Stand 01.04.2024)",
+      "url": "https://www.aelrd-bayern.de/images/Delegationsalgorithmen-2c_240401.pdf"
+    },
+    {
+      "id": "bayern-2c-notes-20240401",
+      "title": "Medizinische Erläuterungen zu den 2c-Algorithmen (Stand 01.04.2024)",
+      "url": "https://www.aelrd-bayern.de/images/Medizinische_Erl%C3%A4uterungen_2c-Algorithmen_240401.pdf"
+    }
+  ],
+  "medications": [
+    {
+      "id": "2a-amiodaron",
+      "inn": "Amiodaron",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.v",
+        "i.o"
+      ],
+      "indikation": "Kammerflimmern / pulslose ventrikuläre Tachykardie (ALS).",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "nach 3. Defi 300 mg i.v./i.o.; nach 5. Defi 150 mg i.v./i.o.",
+        "kinder": "5 mg/kg i.v./i.o. nach 3. Defi (max. 300 mg) und 5 mg/kg nach 5. Defi (max. 150 mg)"
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-atropin",
+      "inn": "Atropinsulfat",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.v",
+        "i.o"
+      ],
+      "indikation": "Lebensbedrohliche Bradykardie.",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "0,5 mg i.v./i.o.; Wiederholung alle 3–5 Min. bis max. 3 mg.",
+        "kinder": "0,01 mg/kg i.v./i.o.; max. 0,5 mg."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-cafedrin-theodrenalin",
+      "inn": "Cafedrin/Theodrenalin",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.v"
+      ],
+      "indikation": "Kritische Hypotension; ggf. trotz/mit KI für i.v.-Flüssigkeit.",
+      "kontraindikationen": "Kinder: keine Zulassung; Vorsicht bei aktiver Blutung (permissive Hypotension).",
+      "dosierung": {
+        "erwachsene": "initial 0,5 ml i.v.; Repetition alle 5 Min. bis max. 4 ml (2 Amp.)."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-diazepam-rektal",
+      "inn": "Diazepam (rektal)",
+      "kategorie": "§2a",
+      "applikation": [
+        "rektal"
+      ],
+      "indikation": "Prolongierter kindlicher Krampfanfall (>3 Min.).",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "kinder": "<15 kg: 5 mg rektal; ≥15 kg: 10 mg rektal; keine Repetition (stattdessen Midazolam)."
+      },
+      "antagonisten": [
+        "Flumazenil"
+      ],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-epinephrin-als",
+      "inn": "Epinephrin (Adrenalin) – ALS",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.v",
+        "i.o"
+      ],
+      "indikation": "Kreislaufstillstand (ALS, defibrillierbar / nicht defibrillierbar).",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "1 mg i.v./i.o. je nach Algorithmus; Wiederholung alle 3–5 Min.",
+        "kinder": "0,01 mg/kg i.v./i.o.; Wiederholung alle 3–5 Min."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-epinephrin-ana",
+      "inn": "Epinephrin (Adrenalin) – Anaphylaxie (i.m.)",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.m"
+      ],
+      "indikation": "Anaphylaktischer Schock.",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "0,5 mg i.m.; ggf. Repetition nach 5 Min.",
+        "kinder": "0,01 mg/kg i.m.; Repetition nach 5–10 Min."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-epinephrin-inh",
+      "inn": "Epinephrin (Adrenalin) – Inhalativ",
+      "kategorie": "§2a",
+      "applikation": [
+        "inhalativ"
+      ],
+      "indikation": "Pseudokrupp; kritische Schwellung/Ödem der oberen Atemwege.",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "5 mg (5 ml) zur Inhalation; Repetition nach Verträglichkeit.",
+        "kinder": "5 mg (5 ml) zur Inhalation; Repetition nach Verträglichkeit."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-esketamin-in",
+      "inn": "Esketamin (intranasal)",
+      "kategorie": "§2a",
+      "applikation": [
+        "intranasal"
+      ],
+      "indikation": "Kritischer Schmerzzustand – Kinder bis 11 Jahre.",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "kinder": "2 mg/kg i.n.; ggf. Hälfte der Initialdosis nach 10 Min."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-fentanyl-in",
+      "inn": "Fentanyl (intranasal)",
+      "kategorie": "§2a",
+      "applikation": [
+        "intranasal"
+      ],
+      "indikation": "Kritischer Schmerzzustand – Kinder ab 12 Jahren.",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "kinder": "0,002 mg/kg i.n.; ggf. halbe Initialdosis nach 10 Min."
+      },
+      "antagonisten": [
+        "Naloxon"
+      ],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-fentanyl-iv",
+      "inn": "Fentanyl (i.v./i.o.)",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.v",
+        "i.o"
+      ],
+      "indikation": "Kritischer Schmerzzustand (ohne ACS) – Erwachsene/≥12 J.",
+      "kontraindikationen": "nicht bei ACS laut Quelle; sonst nicht angegeben",
+      "dosierung": {
+        "erwachsene": "0,05 mg i.v./i.o., titriert; Repetition nach 5 Min. bis max. 0,2 mg."
+      },
+      "antagonisten": [
+        "Naloxon"
+      ],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-flumazenil",
+      "inn": "Flumazenil",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.v",
+        "i.o"
+      ],
+      "indikation": "Kritische Benzodiazepin-Überdosierung/-Intoxikation.",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "0,2 mg i.v.; ggf. Repetition bis max. 1 mg.",
+        "kinder": "ab 1 J.: 0,01 mg/kg langsam i.v.; Repetition bis 0,05 mg/kg (max. 1 mg)."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-glucose40",
+      "inn": "Glucose 40%",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.v",
+        "i.o"
+      ],
+      "indikation": "Kritische Hypoglykämie.",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "initial 12 g langsam i.v.; weitere 8 g nach Zustand.",
+        "kinder": "200 mg/kg i.v."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-ipratropium",
+      "inn": "Ipratropiumbromid (Inhalation)",
+      "kategorie": "§2a",
+      "applikation": [
+        "inhalativ"
+      ],
+      "indikation": "Kritische Bronchospastik – Inhalation.",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "0,5 mg inh.; Repetition nach Verträglichkeit.",
+        "kinder": "0,25 mg inh.; Repetition nach Verträglichkeit."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-midazolam-iv",
+      "inn": "Midazolam (i.v./i.o.)",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.v",
+        "i.o"
+      ],
+      "indikation": "Generalisierter Status epilepticus – intravenös.",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "initial 5 mg; einmalige Repetition bei Persistenz.",
+        "kinder": "0,1 mg/kg i.v./i.o."
+      },
+      "antagonisten": [
+        "Flumazenil"
+      ],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-midazolam-in",
+      "inn": "Midazolam (intranasal)",
+      "kategorie": "§2a",
+      "applikation": [
+        "intranasal"
+      ],
+      "indikation": "Generalisierter Status epilepticus – intranasal.",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "10 mg i.n.; einmalige Repetition nach ≥5 Min.",
+        "kinder": "0,3 mg/kg i.n."
+      },
+      "antagonisten": [
+        "Flumazenil"
+      ],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-morphin-acs",
+      "inn": "Morphin (i.v./i.o.)",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.v",
+        "i.o"
+      ],
+      "indikation": "Kritischer Schmerzzustand bei ACS – nur Erwachsene.",
+      "kontraindikationen": "nur bei ACS indiziert; andere Indikationen nicht gemäß Liste",
+      "dosierung": {
+        "erwachsene": "1–2 mg i.v./i.o.; Repetition nach ≥5 Min. bis max. 5 mg."
+      },
+      "antagonisten": [
+        "Naloxon"
+      ],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-naloxon-nasal",
+      "inn": "Naloxon (intranasal)",
+      "kategorie": "§2a",
+      "applikation": [
+        "intranasal"
+      ],
+      "indikation": "Kritische Opiat-Überdosierung/-Intoxikation.",
+      "kontraindikationen": "zugelassen ab 14 Jahren (laut Quelle)",
+      "dosierung": {
+        "erwachsene": "1,8 mg i.n.; Repetition nach 2–3 Min. bzw. bei Symptomrückkehr.",
+        "kinder": "ab 14 Jahren zugelassen."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-oxymetazolin",
+      "inn": "Oxymetazolin 0,05% (Nasenspray)",
+      "kategorie": "§2a",
+      "applikation": [
+        "nasal"
+      ],
+      "indikation": "Kritische Epistaxis.",
+      "kontraindikationen": "nur Erwachsene/Adoleszente >50 kg; keine Repetition",
+      "dosierung": {
+        "erwachsene": "2–6 Sprühstöße pro betroffenen Nasenloch; keine Repetition."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-oxytocin",
+      "inn": "Oxytocin",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.v",
+        "i.o"
+      ],
+      "indikation": "Kritische postpartale Blutung.",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "3 IE langsam i.v.; einmalige Repetition nach ≥5 Min."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-piritramid",
+      "inn": "Piritramid",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.v",
+        "i.o"
+      ],
+      "indikation": "Kritischer Schmerzzustand (ohne ACS) – Erwachsene/Adoleszente >50 kg.",
+      "kontraindikationen": "unter 50 kg und Kinder laut Quelle",
+      "dosierung": {
+        "erwachsene": "7,5 mg in 100 ml NaCl i.v./i.o. über ≥5 Min.; Repetition nach 10 Min."
+      },
+      "antagonisten": [
+        "Naloxon"
+      ],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-prednison-supp",
+      "inn": "Prednison (Suppositorium)",
+      "kategorie": "§2a",
+      "applikation": [
+        "rektal"
+      ],
+      "indikation": "Pseudokrupp / spastische Bronchitis – Kinder.",
+      "kontraindikationen": "nur Kinder; spezifische KIs nicht im Quell-Dokument",
+      "dosierung": {
+        "kinder": "100 mg rektal (alters-/gewichtsunabhängig)."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-salbutamol",
+      "inn": "Salbutamol (Inhalation)",
+      "kategorie": "§2a",
+      "applikation": [
+        "inhalativ"
+      ],
+      "indikation": "Kritische Bronchospastik – Inhalation.",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "2,5 mg (5 ml) inh.; Repetition nach Verträglichkeit.",
+        "kinder": "2,5 mg (5 ml) inh.; Repetition nach Verträglichkeit."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-sauerstoff",
+      "inn": "Sauerstoff",
+      "kategorie": "§2a",
+      "applikation": [
+        "inhalativ"
+      ],
+      "indikation": "Kritische Hypoxie; CPR: höchste inspiratorische O2-Konzentration.",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "15 l/min Maske (Richtwert); CPR: maximaler O2-Anteil."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-thiamin",
+      "inn": "Thiamin",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.v",
+        "i.o"
+      ],
+      "indikation": "V. a. alkoholinduzierter SE; Hypoglykämie bei V. a. chron. Alkoholabusus.",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "100 mg in 100 ml NaCl 0,9% i.v./i.o.; vor Glukose bei Hypoglykämie."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-urapidil",
+      "inn": "Urapidil",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.v",
+        "i.o"
+      ],
+      "indikation": "Hypertensiver Notfall (Erw.).",
+      "kontraindikationen": "nicht angegeben im Quell-Dokument",
+      "dosierung": {
+        "erwachsene": "initial 5 mg i.v./i.o.; Repetition ≥5 Min.; Senkung nach Symptomatik (max. 25% RRsyst)."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2a-bal-elektrolyt",
+      "inn": "Balancierte Elektrolytlösung (Acetat/Malat)",
+      "kategorie": "§2a",
+      "applikation": [
+        "i.v"
+      ],
+      "indikation": "Träger-Infusionslösung; Flüssigkeitsersatz bei kritischem Volumenmangel.",
+      "kontraindikationen": "permissive Hypotension bei aktiver Blutung beachten (CAVE).",
+      "dosierung": {
+        "erwachsene": "nach Bedarf."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-07-02",
+        "gueltig_bis": "2025-06-30"
+      },
+      "quelle": "bayern-2a-20240702"
+    },
+    {
+      "id": "2c-glucose10",
+      "inn": "Glucose 10%",
+      "kategorie": "§4(2c)",
+      "applikation": [
+        "i.v",
+        "p.o."
+      ],
+      "indikation": "Hypoglykämie (Delegation IV-Zugang, Infusion, Glukosegabe).",
+      "kontraindikationen": "nur Erwachsene/Adoleszente; keine Repetition (laut Quelle)",
+      "dosierung": {
+        "erwachsene": "10 g (100 ml) i.v. als Kurzinf.; ggf. 20 g p.o. bei erhaltener Schluckfähigkeit (falls kein äquivalentes orales Präparat)."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-03-22",
+        "gueltig_bis": "Änderung auf Algorithmus-Ebene"
+      },
+      "quelle": "bayern-2c-meds-20240401"
+    },
+    {
+      "id": "2c-piritramid",
+      "inn": "Piritramid",
+      "kategorie": "§4(2c)",
+      "applikation": [
+        "i.v"
+      ],
+      "indikation": "Nicht tolerabler traumatischer Schmerz ODER akuter Abdominalschmerz – vital stabil.",
+      "kontraindikationen": "nur Erwachsene/Adoleszente >50 kg; keine Schwangeren; keine Repetition (laut Quelle)",
+      "dosierung": {
+        "erwachsene": "7,5 mg in 100 ml NaCl 0,9% i.v. über ≥5 Min."
+      },
+      "antagonisten": [
+        "Naloxon"
+      ],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-03-22",
+        "gueltig_bis": "Änderung auf Algorithmus-Ebene"
+      },
+      "quelle": "bayern-2c-meds-20240401"
+    },
+    {
+      "id": "2c-bal-elektrolyt",
+      "inn": "Balancierte Elektrolytlösung",
+      "kategorie": "§4(2c)",
+      "applikation": [
+        "i.v"
+      ],
+      "indikation": "Nach jeweiligem Delegationsalgorithmus (z. B. Sepsis, Trauma).",
+      "kontraindikationen": "nur Erwachsene/Adoleszente; Sepsis: initial max. 500 ml",
+      "dosierung": {
+        "erwachsene": "langsame Infusion; Sepsis: initial max. 500 ml, danach langsam zum Offenhalten."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-03-22",
+        "gueltig_bis": "Änderung auf Algorithmus-Ebene"
+      },
+      "quelle": "bayern-2c-meds-20240401"
+    },
+    {
+      "id": "2c-sauerstoff",
+      "inn": "Sauerstoff (Nasenbrille)",
+      "kategorie": "§4(2c)",
+      "applikation": [
+        "inhalativ"
+      ],
+      "indikation": "Moderate Hypoxämie; Prä- und Postoxygenierung vor trachealer Absaugung.",
+      "kontraindikationen": "ohne Hyperkapnierisiko bis 6 l/min; mit Risiko bis 2 l/min (laut Quelle)",
+      "dosierung": {
+        "erwachsene": "Dosis nach SpO2-Zielbereich; maximaler O2-Fluss zur Prä- und Postoxygenierung."
+      },
+      "antagonisten": [],
+      "freigabe": {
+        "von": "ÄLBRD / StMI",
+        "am": "2024-03-22",
+        "gueltig_bis": "Änderung auf Algorithmus-Ebene"
+      },
+      "quelle": "bayern-2c-meds-20240401"
+    }
+  ],
+  "sops": [
+    {
+      "id": "sop-2c-algorithmen-20240401",
+      "title": "Delegationsalgorithmen §4 Abs. 2 Nr. 2c NotSanG (Bayern)",
       "updated": "2024-04-01",
-      "offline": false,
-      "notes": "Offizielles Dokument: Sammlung der 2c-Algorithmen für NotSan in Bayern."
+      "url": "https://www.aelrd-bayern.de/images/Delegationsalgorithmen-2c_240401.pdf"
+    },
+    {
+      "id": "sop-2c-erlaeuterungen-20240401",
+      "title": "Medizinische Erläuterungen zu den 2c-Algorithmen",
+      "updated": "2024-04-01",
+      "url": "https://www.aelrd-bayern.de/images/Medizinische_Erl%C3%A4uterungen_2c-Algorithmen_240401.pdf"
+    },
+    {
+      "id": "sop-2a-checklisten-20240725",
+      "title": "Checklisten § 2a NotSanG (Gesamt)",
+      "updated": "2024-07-25",
+      "url": "https://www.aelrd-bayern.de/images/2a-Checklisten_gesamt_240725.pdf"
     }
   ]
 }
