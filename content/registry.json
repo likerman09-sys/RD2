@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "generated": "2025-08-16T12:00:00Z",
+  "sources": [
+    {
+      "id": "bayern-2c-2024",
+      "title": "Bayern – 2c-Delegationsalgorithmen (Stand 01.04.2024)",
+      "type": "2c",
+      "state": "Bayern",
+      "publisher": "ÄLRD Bayern",
+      "url": "https://www.aelrd-bayern.de/images/Delegationsalgorithmen-2c_240401.pdf",
+      "updated": "2024-04-01",
+      "offline": false,
+      "notes": "Offizielles Dokument: Sammlung der 2c-Algorithmen für NotSan in Bayern."
+    }
+  ]
+}
